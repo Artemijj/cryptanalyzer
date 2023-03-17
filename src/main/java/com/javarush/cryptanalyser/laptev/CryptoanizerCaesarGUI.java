@@ -63,6 +63,8 @@ public class CryptoanizerCaesarGUI implements ICryptoanizerCaesarGUI{
         tb.add(makeButton("Bruteforce", new BruteforceButtonPress(this, iccConsole)));
         tb.add(makeButton("Statanalysis", new StatButtonPress(this, iccConsole)));
         tb.add(makeButton("Reset", new ResetButtonPress(this, iccConsole)));
+        tb.addSeparator();
+        tb.add(makeButton("Пыщь...", new DefaultButtonPress(this, iccConsole)));
 
         toolPanel.add(tb);
         toolPanel.add(Box.createVerticalStrut(5));
