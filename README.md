@@ -4,3 +4,4 @@ CryptoanizerCaesar -e <key> <filename>  - Шифрование файла (0 < k
 CryptoanizerCaesar -d <key> <filename>  - Дешифрование файла (0 < key <= 40)
 CryptoanizerCaesar -b <filename>  - Дешифрование файла (bruteforce)
 CryptoanizerCaesar -s <cryptFilename> <referenceFilename>  - Дешифрование файла методом статистического анализа
+CryptoanizerCaesar -g  - Запустить графический интерфейс
