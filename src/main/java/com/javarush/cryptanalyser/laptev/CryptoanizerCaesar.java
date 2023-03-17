@@ -42,7 +42,7 @@ public class CryptoanizerCaesar {
                 String file = args[2];
                 iccConsole.readFileToSourceTxt(file);
                 iccConsole.encryptTxt(iccConsole.getSourceTxt(), encryptKey);
-                iccConsole.saveTxtToFile("crypt.txt", iccConsole.getEncodeTxt());
+                iccConsole.saveTxtToFile("encoded.txt", iccConsole.getEncodeTxt());
             } catch (NumberFormatException e) {
                 System.err.println(errorMessage);
                 System.exit(1);
@@ -61,7 +61,7 @@ public class CryptoanizerCaesar {
                 String file = args[2];
                 iccConsole.readFileToSourceTxt(file);
                 iccConsole.encryptTxt(iccConsole.getSourceTxt(), -Math.abs(encryptKey));
-                iccConsole.saveTxtToFile("decrypt.txt", iccConsole.getEncodeTxt());
+                iccConsole.saveTxtToFile("output.txt", iccConsole.getEncodeTxt());
             } catch (NumberFormatException e) {
                 System.err.println(errorMessage);
                 System.exit(1);
@@ -75,7 +75,7 @@ public class CryptoanizerCaesar {
             iccConsole.readFileToSourceTxt(file);
             int key = iccConsole.bruteForceSourceTxt();
             iccConsole.encryptTxt(iccConsole.getSourceTxt(), key);
-            iccConsole.saveTxtToFile("decrypt.txt", iccConsole.getEncodeTxt());
+            iccConsole.saveTxtToFile("output.txt", iccConsole.getEncodeTxt());
         } else if (progKey.equals("-s")) {
             if (args.length != 3) {
                 System.err.println(errorMessage);
@@ -89,7 +89,7 @@ public class CryptoanizerCaesar {
             iccConsole.setEncodeTxt(iccConsole.getSourceTxt());
             int key = iccConsole.statAnalizSourceTxtByReferenceTxt(iccConsole.getEncodeTxt(), iccConsole.getReferenceTxt());
             iccConsole.encryptTxt(iccConsole.getSourceTxt(), -key);
-            iccConsole.saveTxtToFile("decrypt.txt", iccConsole.getEncodeTxt());
+            iccConsole.saveTxtToFile("output.txt", iccConsole.getEncodeTxt());
         } else if (progKey.equals("-g")) {
             iccGUI.mainWindow();
             iccConsole.setGuiMark(true);
