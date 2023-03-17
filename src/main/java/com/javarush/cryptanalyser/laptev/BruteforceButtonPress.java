@@ -21,5 +21,6 @@ public class BruteforceButtonPress implements ActionListener {
         iccGUI.setTextAreaOut(iccConsole.getEncodeTxt());
         iccGUI.setKeyField(String.valueOf(key));
         iccGUI.setKeyLabel("Founded key -");
+
     }
 }
