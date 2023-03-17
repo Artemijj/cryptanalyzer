@@ -1,4 +1,4 @@
-package com.javarush.cryptanalyzer.laptev;
+package com.javarush.cryptanalyser.laptev;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;

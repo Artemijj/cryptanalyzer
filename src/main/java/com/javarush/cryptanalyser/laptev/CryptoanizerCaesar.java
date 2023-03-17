@@ -1,4 +1,4 @@
-package com.javarush.cryptanalyzer.laptev;
+package com.javarush.cryptanalyser.laptev;
 
 public class CryptoanizerCaesar {
     private static String errorMessage =
