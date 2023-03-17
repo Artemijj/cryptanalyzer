@@ -9,7 +9,8 @@ public class CryptoanizerCaesar {
             "-e <key> <filename>  - Шифрование файла (0 < key <= 40).\n" +
             "-d <key> <filename>  - Дешифрование файла (0 < key <= 40).\n" +
             "-b <filename>  - Дешифрование файла (bruteforce).\n" +
-            "-s <cryptFilename> <referenceFilename>  - Дешифрование файла методом статистического анализа";
+            "-s <cryptFilename> <referenceFilename>  - Дешифрование файла методом статистического анализа.\n" +
+            "-g  - Запустить графический интерфейс.";
 
     public static void main(String[] args) {
         ICryptoanizerCaesarConsole iccConsole = new CryptoanizerCaesarConsole();
