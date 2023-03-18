@@ -1,4 +1,4 @@
-package com.javarush.cryptanalyser.laptev;
+package com.javarush.cryptanalyser.laptev.view;
 
 import javax.swing.*;
 

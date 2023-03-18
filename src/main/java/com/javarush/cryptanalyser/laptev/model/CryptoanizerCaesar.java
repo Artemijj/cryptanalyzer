@@ -1,4 +1,7 @@
-package com.javarush.cryptanalyser.laptev;
+package com.javarush.cryptanalyser.laptev.model;
+
+import com.javarush.cryptanalyser.laptev.view.CryptoanizerCaesarGUI;
+import com.javarush.cryptanalyser.laptev.view.ICryptoanizerCaesarGUI;
 
 public class CryptoanizerCaesar {
     private static String errorMessage =

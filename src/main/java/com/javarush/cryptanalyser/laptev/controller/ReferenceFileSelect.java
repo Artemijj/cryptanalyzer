@@ -1,4 +1,7 @@
-package com.javarush.cryptanalyser.laptev;
+package com.javarush.cryptanalyser.laptev.controller;
+
+import com.javarush.cryptanalyser.laptev.model.ICryptoanizerCaesarConsole;
+import com.javarush.cryptanalyser.laptev.view.ICryptoanizerCaesarGUI;
 
 import javax.swing.*;
 import java.awt.event.ActionEvent;

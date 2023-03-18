@@ -1,4 +1,7 @@
-package com.javarush.cryptanalyser.laptev;
+package com.javarush.cryptanalyser.laptev.controller;
+
+import com.javarush.cryptanalyser.laptev.model.ICryptoanizerCaesarConsole;
+import com.javarush.cryptanalyser.laptev.view.ICryptoanizerCaesarGUI;
 
 import javax.swing.*;
 import java.awt.event.ActionEvent;
@@ -26,7 +29,7 @@ public class SourceFileSelect implements ActionListener {
                     iccConsole.readFileToSourceTxt(iccGUI.getFilePath());
                     iccConsole.setLoadedTxt(iccConsole.getSourceTxt());
                     iccGUI.setTextAreaIn(iccConsole.getSourceTxt());
-                    iccConsole.saveTxtToFile("input.txt", iccConsole.getSourceTxt());
+                    iccConsole.saveTxtToFile("output.txt", iccConsole.getSourceTxt());
                     iccGUI.setKeyLabel("Set key.");
                 }
     }

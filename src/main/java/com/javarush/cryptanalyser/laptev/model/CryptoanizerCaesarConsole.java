@@ -1,4 +1,4 @@
-package com.javarush.cryptanalyser.laptev;
+package com.javarush.cryptanalyser.laptev.model;
 
 import java.io.IOException;
 import java.nio.file.Files;

@@ -1,4 +1,4 @@
-package com.javarush.cryptanalyser.laptev;
+package com.javarush.cryptanalyser.laptev.model;
 
 public interface ICryptoanizerCaesarConsole {
     void readFileToSourceTxt(String fileName);

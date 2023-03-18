@@ -1,4 +1,7 @@
-package com.javarush.cryptanalyser.laptev;
+package com.javarush.cryptanalyser.laptev.view;
+
+import com.javarush.cryptanalyser.laptev.controller.*;
+import com.javarush.cryptanalyser.laptev.model.ICryptoanizerCaesarConsole;
 
 import javax.swing.*;
 import java.awt.*;
@@ -9,7 +12,7 @@ import static java.awt.Component.*;
 public class CryptoanizerCaesarGUI implements ICryptoanizerCaesarGUI{
     private static ICryptoanizerCaesarConsole iccConsole;
 
-    CryptoanizerCaesarGUI(ICryptoanizerCaesarConsole iccConsole) {
+    public CryptoanizerCaesarGUI(ICryptoanizerCaesarConsole iccConsole) {
         this.iccConsole = iccConsole;
     }
 
@@ -172,9 +175,9 @@ public class CryptoanizerCaesarGUI implements ICryptoanizerCaesarGUI{
     }
 
     private void addGridPanel(JComponent component) {
-        JPanel panel = new JPanel();//new FlowLayout(FlowLayout.LEFT));
+        JPanel panel = new JPanel();
         panel.setLayout(new BoxLayout(panel, BoxLayout.X_AXIS));
-        panel.add(component);//, BorderLayout.SOUTH);
+        panel.add(component);
         panel.add(Box.createHorizontalGlue());
         gridPanel.add(panel);
     }

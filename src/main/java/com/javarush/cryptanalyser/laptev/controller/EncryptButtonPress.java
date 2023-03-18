@@ -1,4 +1,7 @@
-package com.javarush.cryptanalyser.laptev;
+package com.javarush.cryptanalyser.laptev.controller;
+
+import com.javarush.cryptanalyser.laptev.model.ICryptoanizerCaesarConsole;
+import com.javarush.cryptanalyser.laptev.view.ICryptoanizerCaesarGUI;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -20,7 +23,7 @@ public class EncryptButtonPress implements ActionListener {
             if (key > 0 && key < 41) {
                 iccConsole.readFileToSourceTxt(iccGUI.getFilePath());
                 iccConsole.encryptTxt(iccConsole.getSourceTxt(), key);
-                iccConsole.saveTxtToFile("crypt.txt", iccConsole.getEncodeTxt());
+                iccConsole.saveTxtToFile("encoded.txt", iccConsole.getEncodeTxt());
                 iccGUI.setTextAreaOut(iccConsole.getEncodeTxt());
             } else {
 //            iccgui.alertWindow();
