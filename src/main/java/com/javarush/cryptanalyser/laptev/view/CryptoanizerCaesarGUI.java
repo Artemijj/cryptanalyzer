@@ -39,10 +39,10 @@ public class CryptoanizerCaesarGUI implements ICryptoanizerCaesarGUI{
     private JPanel gridPanel;
     private Image image = Toolkit.getDefaultToolkit().getImage("Caesar.jpg");
 
-    public static void main(String[] args) {
-        CryptoanizerCaesarGUI ccg = new CryptoanizerCaesarGUI(iccConsole);
-        ccg.mainWindow();
-    }
+//    public static void main(String[] args) {
+//        CryptoanizerCaesarGUI ccg = new CryptoanizerCaesarGUI(iccConsole);
+//        ccg.mainWindow();
+//    }
 
     public void mainWindow() {
         window = new JFrame("Caesar");
