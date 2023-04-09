@@ -20,6 +20,7 @@ public class CryptoanizerCaesar {
         ICryptoanizerCaesarConsole iccConsole = new CryptoanizerCaesarConsole();
         ICryptoanizerCaesarGUI iccGUI = new CryptoanizerCaesarGUI(iccConsole);
         iccGUI.mainWindow();
+        iccConsole.setGuiMark(true);
 //        if (args.length == 0) {
 //            System.err.println(errorMessage);
 //            System.exit(1);
